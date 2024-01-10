@@ -4,6 +4,7 @@ use clap::Parser;
 #[command(author, version, about, long_about = None)]
 struct Cli {
     /// Optional name to operate on
+    #[arg(short, long, env = "INPUT_NAME")]
     name: Option<String>,
 }
 

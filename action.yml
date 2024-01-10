@@ -2,8 +2,8 @@
 name: 'Hello World'
 description: 'Rust github action POC'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  name:  # id of input
+    description: 'Name'
     required: true
     default: 'World'
 outputs:
@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.name }}
