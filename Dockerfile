@@ -9,6 +9,6 @@ RUN cargo build --release
 
 FROM scratch
 
-COPY --from=BUILDER /usr/rust-github-actions/target/release/rust-github-action-poc .
+COPY --from=BUILDER /usr/src/rust-github-actions/target/release/rust-github-action-poc .
 
 CMD ["rust-github-action"]
