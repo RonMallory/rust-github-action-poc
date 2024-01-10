@@ -22,4 +22,4 @@ COPY --from=BUILDER /etc/group /etc/group
 
 USER user
 
-CMD ["rust-github-action-poc"]
+ENTRYPOINT ["rust-github-action-poc"]
