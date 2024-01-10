@@ -14,7 +14,6 @@ RUN chown user:user /usr/src/rust-github-actions/target/x86_64-unknown-linux-mus
 
 FROM scratch
 
-# Copy the binary
 COPY --from=BUILDER /usr/src/rust-github-actions/target/x86_64-unknown-linux-musl/release/rust-github-action-poc /usr/local/bin/
 
 COPY --from=BUILDER /etc/passwd /etc/passwd

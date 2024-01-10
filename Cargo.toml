@@ -2,7 +2,10 @@
 name = "rust-github-action-poc"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Ron Mallory <ronnymallory@gmail.com>"]
+about = [
+    "This is a proof of concept of using rust clap cli application in a github action",
+]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
